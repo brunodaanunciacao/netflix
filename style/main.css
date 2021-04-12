@@ -1,6 +1,7 @@
 :root{
     --vermelho: #E50914;
     --preta: #141414;
+    --azul: #0c295f;
 }
 
 *{
@@ -12,7 +13,7 @@
 
 /* base */
 body{
-    background: var(--preta);
+    background: var(--azul);
     font-family: 'Arial', Times, serif;
     color: white;
 }
@@ -27,9 +28,16 @@ header .container{
 
 header .logo{
     color: var(--vermelho);
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'OnePieceFont',Arial, Helvetica, sans-serif;
     font-size: 40px;
 }
+
+header .logo span{
+    color: wheat;
+    font-family: 'OnePieceFont',Arial, Helvetica, sans-serif;
+    font-size: 40px;
+}
+
 
 header nav a{
     text-decoration: none;
@@ -45,7 +53,7 @@ header nav a:hover{
 /* filme principal */
 .filme-principal{
     font-size: 16px;
-    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-house.jpg');
+    background: linear-gradient(rgba(0,0,0,.50),rgba(0,0,0,.50)100%), url('../img/capa-one-piece.jpg');
 
     height: 400px;
     background-size: cover;
@@ -98,11 +106,17 @@ header nav a:hover{
 }
 
 .box-filme{
-    height: 100%;
+    height: 285px;
     width: 100%;
     display: block;
+    border: solid 2px var(--preta);
 }
 
 .carrosel-filmes{
     margin-top: 5px;
+}
+
+@font-face {
+    font-family: 'OnePieceFont';
+    src: url('./fonts/one\ piece\ font.ttf') format('truetype');
 }
